@@ -1,0 +1,25 @@
+
+Interface: 192.168.21.48 --- 0xc
+  Internet Address      Physical Address      Type
+  192.168.20.1          08-00-27-43-73-bc     dynamic   
+  192.168.20.73         c4-36-6c-cb-80-7a     dynamic   
+  192.168.21.58         08-00-27-43-73-bc     dynamic   
+  192.168.23.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.2             01-00-5e-00-00-02     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+Interface: 192.168.56.1 --- 0xd
+  Internet Address      Physical Address      Type
+  192.168.56.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.2             01-00-5e-00-00-02     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+TARÝH= 2021-10-16 22:02:53.747678
+SALDIRGAN IP: None
+SALDIRGAN MAC:None

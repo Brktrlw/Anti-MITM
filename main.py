@@ -53,6 +53,8 @@ class AntiMITM():
                 self.zipIPandMAC()
                 self.setTargetMacAddress()
                 self.setAttackerIpAddress()
+                while True:
+                    time.sleep(1)
                 #self.ATTACK()
             else:
                 self.MAC_ADDRESS_LIST.clear()
