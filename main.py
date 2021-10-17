@@ -49,7 +49,7 @@ class AntiMITM():
                 mixer.init()
                 mixer.music.load('dangerSound.mp3')
                 mixer.music.play()
-                os.system("netsh wlan disconnect")
+                #os.system("netsh wlan disconnect")
                 self.zipIPandMAC()
                 self.setTargetMacAddress()
                 self.setAttackerIpAddress()
