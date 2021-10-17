@@ -50,19 +50,21 @@ class AntiMITM():
             time.sleep(2)
             if self.CONNECT_STATUS==False:
                 while True:
-                    #print("İNTERNET YOK")
+                    print("İNTERNET YOK")
+                    print(self.REAL_GATEWAY_IP)
+                    print(self.REAL_GATEWAY_MAC)
                     time.sleep(2)
                     self.MAC_ADDRESS_LIST.clear()
                     self.setRealGatewayMac()
                     self.updateMacAddressList()
                     if self.CONNECT_STATUS==True:
                         time.sleep(1)
-                        #print("İNTERNETE BAGLANILDI")
+                        print("İNTERNETE BAGLANILDI")
                         break
             else:
-                #print("TARANIYOR")
-                #print(self.REAL_GATEWAY_MAC)
-                #print(self.REAL_GATEWAY_IP)
+                print("TARANIYOR")
+                print(self.REAL_GATEWAY_MAC)
+                print(self.REAL_GATEWAY_IP)
                 if self.REAL_GATEWAY_MAC not in self.MAC_ADDRESS_LIST:                  ######----- SALDIRI YAPILDIĞINDA CALISAN YER -----#####
                     self.SAVE_LOG()
                     mixer.init()
@@ -103,8 +105,6 @@ class AntiMITM():
         with open("logs.txt", "a") as file:
             file.write(self.arpTable)
             file.write("TARİH= " + str(datetime.now())+"\n")
-            file.write("SALDIRGAN IP: "+str(self.TARGET_IP_ADDRESS)+"\n")
-            file.write("SALDIRGAN MAC:"+str(self.TARGET_MAC_ADDRESS)+"\n")
     #def ATTACK(self):
     #    arp_response = scapy.ARP(op=2, pdst=self.TARGET_IP_ADDRESS, hwdst=self.TARGET_MAC_ADDRESS, psrc=self.REAL_GATEWAY_IP)
     #    while True:
