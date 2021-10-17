@@ -60,6 +60,7 @@ class AntiMITM():
                 self.MAC_ADDRESS_LIST.clear()
                 self.updateMacAddressList()
 
+
     def setTargetMacAddress(self):
         for lines in self.arpTable.splitlines():
             if lines.split() == [] or "Interface:" in lines.split() or "Internet" in lines.split():
